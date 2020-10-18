@@ -1,0 +1,41 @@
+    {
+    "maxNumRounds": 10,
+	
+	"logManagerStyle": "DEBUG",
+	"mongoConnector": "mongodb+srv://admin:admin@fortheplanet-ya50d.mongodb.net/fortheplanetlog?retryWrites=true&w=majority",
+
+	"areHumansOnSyncTablets": false,
+    "isSimulation": false,
+    "numGamesToPlay": 35,
+
+    "roundBudget": 14,
+    "environmentDecayBudget": [7,7],
+    "playerDecayBudget": [2,2],
+
+    "possibleParameterizations": [{
+            "id": "['CC', 'CC', 'CC']",
+            "gameParameterizations": [{
+                "diceLogic": "RANDOM",
+                "playerParameterizations": [{
+                        "name": "Player 251",
+                        "fatimaRpcPath": "NONE",
+                        "playerType": "HUMAN",
+                        "interactionType": "NONE"
+                    },
+                    {
+                        "name": "Player 541",
+                        "fatimaRpcPath": "NONE",
+                        "playerType": "AI-FAIR",
+                        "interactionType": "NONE"
+                    },
+                    {
+                        "name": "Player 76",
+                        "fatimaRpcPath": "NONE",
+                        "playerType": "AI-COMPENSATOR",
+                        "interactionType": "NONE"
+                    }
+                ],
+                "isNarrated": false
+            }]
+        }]
+    }
